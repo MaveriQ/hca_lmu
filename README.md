@@ -43,9 +43,11 @@ We used surprise package to automate the steps in Part 4 and used various simila
 - Cosine Similarity
 - Mean Square Distance
 - Pearson Correlation
+
 for similarity measures and 
 - Singular Value Decompostion
 - Non negative Matrix Factorization
+
 for modeling the user-item matrix. We could have used either ALS (Alternating Least Squares) or gradient descent as optimization mechanism, but we chose ALS as that is more commonly used in Recommendation Systems
 
 To run the file, please install surprise package by 'pip install surprise'. The script has a help file of its own
