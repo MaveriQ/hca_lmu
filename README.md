@@ -23,6 +23,11 @@ Please install following python packages
 
 All of these packages can be install using pip. 
 
+## Preparing Anaconda Environment
+If Anaconda is already installed in the system, you can create an environment with all necessary packages from above with a single command : 'conda env create -f environment.yml
+'
+Then switch to the environment using 'conda activate hca' and you can run all scripts and notebooks
+
 ### Part 1- Data Cleaning - Movie Titles
 This notebook deals with cleaning up the movie_titles.csv that we get from the zip archive.
 I have not removed the likely errors, and instead showed how to deal with errors. 
@@ -43,9 +48,11 @@ We used surprise package to automate the steps in Part 4 and used various simila
 - Cosine Similarity
 - Mean Square Distance
 - Pearson Correlation
+
 for similarity measures and 
 - Singular Value Decompostion
 - Non negative Matrix Factorization
+
 for modeling the user-item matrix. We could have used either ALS (Alternating Least Squares) or gradient descent as optimization mechanism, but we chose ALS as that is more commonly used in Recommendation Systems
 
 To run the file, please install surprise package by 'pip install surprise'. The script has a help file of its own
